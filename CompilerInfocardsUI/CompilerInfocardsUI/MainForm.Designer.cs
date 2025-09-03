@@ -767,7 +767,7 @@ namespace CompilerInfocardsUI
             Name = "MainForm";
             SizeGripStyle = SizeGripStyle.Hide;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Сборщик информационный карт";
+            Text = "Сборщик информационных карт";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);
