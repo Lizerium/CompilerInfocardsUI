@@ -1,4 +1,4 @@
-﻿namespace CompilerInfocardsUI.Services
+﻿namespace CompilerInfocardsUI.AppData.Command
 {
     public class ExeCommand
     {

@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 
+using CompilerInfocardsUI.AppData.Command;
 using CompilerInfocardsUI.Services;
 
 namespace CompilerInfocardsUI
@@ -11,50 +12,53 @@ namespace CompilerInfocardsUI
 
         public MainForm()
         {
-            commandServices = new CommandServices();
+            commandServices = new CommandServices("configs.json");
+            commands = commandServices.Commands;
             commandServices.LogAction += CommandServiceLog;
             InitializeComponent();
 
             var currentPath = AppDomain.CurrentDomain.BaseDirectory;
 
-            commands = new Dictionary<string, ExeCommand>
-            {
-                { "TEST", new ExeCommand("notepad.exe", "") },
-                { "VSCODE", new ExeCommand("cmd.exe",$"/C code \"{currentPath}\"" ) },
-                { "ALL", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\ALL_merged.frc .\\ALL.dll") },
-#region keys html and strings compile
-                { "SBM_ALL", new ExeCommand("frc.exe", "-c .\\FRC\\MergedStrings\\FRC_RELEASE\\SBM.frc .\\SBM.dll") },
-                { "SBM3_ALL", new ExeCommand("frc.exe", "-c .\\FRC\\MergedStrings\\FRC_RELEASE\\SBM3.frc .\\SBM3.dll") },
-#endregion
-#region keys html compile
-                { "infocards_HTML", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_InfoCards_original.frc .\\infocards.dll") },
-                { "SBM2_HTML", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_SBM2_original.frc .\\SBM2.dll") },
-                { "misctextinfo2_HTML", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_MiscTextInfo2_original.frc .\\misctextinfo2.dll") },
-                { "misctext_HTML", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_MiscText_original.frc .\\misctext.dll") },
-                { "equipresources_HTML", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_EquipResources_original.frc .\\equipresources.dll") },
-#endregion
-#region keys strings compile
-                { "SBM2_STRINGS", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\SBM2_merged.frc .\\SBM2.dll") },
-                { "offerbriberesources_STRINGS", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\OfferBribeResources_merged.frc .\\offerbriberesources.dll") },
-                { "equipresources_STRINGS", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\EquipResources_merged.frc .\\equipresources.dll") },
-                { "nameresources_STRINGS", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\NameResources_merged.frc .\\nameresources.dll") },
-                { "resources_STRINGS", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\resources_merged.frc .\\resources.dll") },
-#endregion
-#region keys edit
-                { "SBM_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\FRC_RELEASE\\SBM.frc\"") },
-                { "SBM2_STRINGS_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\SBM2_merged.frc\"") },
-                { "SBM2_HTML_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_SBM2_original.frc\"") },
-                { "SBM3_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\FRC_RELEASE\\SBM3.frc\"") },
-                { "resources_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\resources_merged.frc\"") },
-                { "infocards_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_InfoCards_original.frc\"") },
-                { "misctext_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_MiscText_original.frc\"") },
-                { "nameresources_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\NameResources_merged.frc\"") },
-                { "equipresources_STRINGS_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\EquipResources_merged.frc\"") },
-                { "equipresources_HTML_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_EquipResources_original.frc\"") },
-                { "offerbriberesources_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\OfferBribeResources_merged.frc\"") },
-                { "misctextinfo2_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_MiscTextInfo2_original.frc\"") },
-#endregion
-            };
+
+
+            //            commands = new Dictionary<string, ExeCommand>
+            //            {
+            //                { "TEST", new ExeCommand("notepad.exe", "") },
+            //                { "VSCODE", new ExeCommand("cmd.exe",$"/C code \"{currentPath}\"" ) },
+            //                { "ALL", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\ALL_merged.frc .\\ALL.dll") },
+            //#region keys html and strings compile
+            //                { "SBM_ALL", new ExeCommand("frc.exe", "-c .\\FRC\\MergedStrings\\FRC_RELEASE\\SBM.frc .\\SBM.dll") },
+            //                { "SBM3_ALL", new ExeCommand("frc.exe", "-c .\\FRC\\MergedStrings\\FRC_RELEASE\\SBM3.frc .\\SBM3.dll") },
+            //#endregion
+            //#region keys html compile
+            //                { "infocards_HTML", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_InfoCards_original.frc .\\infocards.dll") },
+            //                { "SBM2_HTML", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_SBM2_original.frc .\\SBM2.dll") },
+            //                { "misctextinfo2_HTML", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_MiscTextInfo2_original.frc .\\misctextinfo2.dll") },
+            //                { "misctext_HTML", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_MiscText_original.frc .\\misctext.dll") },
+            //                { "equipresources_HTML", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_EquipResources_original.frc .\\equipresources.dll") },
+            //#endregion
+            //#region keys strings compile
+            //                { "SBM2_STRINGS", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\SBM2_merged.frc .\\SBM2.dll") },
+            //                { "offerbriberesources_STRINGS", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\OfferBribeResources_merged.frc .\\offerbriberesources.dll") },
+            //                { "equipresources_STRINGS", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\EquipResources_merged.frc .\\equipresources.dll") },
+            //                { "nameresources_STRINGS", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\NameResources_merged.frc .\\nameresources.dll") },
+            //                { "resources_STRINGS", new ExeCommand("frc.exe", ".\\FRC\\MergedStrings\\resources_merged.frc .\\resources.dll") },
+            //#endregion
+            //#region keys edit
+            //                { "SBM_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\FRC_RELEASE\\SBM.frc\"") },
+            //                { "SBM2_STRINGS_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\SBM2_merged.frc\"") },
+            //                { "SBM2_HTML_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_SBM2_original.frc\"") },
+            //                { "SBM3_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\FRC_RELEASE\\SBM3.frc\"") },
+            //                { "resources_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\resources_merged.frc\"") },
+            //                { "infocards_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_InfoCards_original.frc\"") },
+            //                { "misctext_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_MiscText_original.frc\"") },
+            //                { "nameresources_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\NameResources_merged.frc\"") },
+            //                { "equipresources_STRINGS_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\EquipResources_merged.frc\"") },
+            //                { "equipresources_HTML_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_EquipResources_original.frc\"") },
+            //                { "offerbriberesources_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\OfferBribeResources_merged.frc\"") },
+            //                { "misctextinfo2_EDIT", new ExeCommand("cmd.exe", "/C code \".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_MiscTextInfo2_original.frc\"") },
+            //#endregion
+            //            };
         }
 
         private async void materialButton_ALL_Click(object sender, EventArgs e)
@@ -148,6 +152,10 @@ namespace CompilerInfocardsUI
         #endregion
 
         #region EDIT FILES
+        private async void materialButton_Open_DLLS_Click(object sender, EventArgs e)
+        {
+            await RunCommand("RootDLLS");
+        }
 
         private async void materialButton_VSCODE_Click(object sender, EventArgs e)
         {

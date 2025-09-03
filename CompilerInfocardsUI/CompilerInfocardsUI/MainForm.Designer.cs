@@ -49,10 +49,8 @@ namespace CompilerInfocardsUI
             materialButtonHTML_equipresources = new MaterialSkin.Controls.MaterialButton();
             materialButton_HTML_misctext = new MaterialSkin.Controls.MaterialButton();
             materialButton_HTML_misctextinfo2 = new MaterialSkin.Controls.MaterialButton();
-            materialButton_ALL_SBM = new MaterialSkin.Controls.MaterialButton();
             materialButton_HTML_SBM2 = new MaterialSkin.Controls.MaterialButton();
             materialButton_HTML_infocards = new MaterialSkin.Controls.MaterialButton();
-            materialButton_ALL = new MaterialSkin.Controls.MaterialButton();
             textBoxLog = new TextBox();
             tableLayoutPanel2 = new TableLayoutPanel();
             materialButton_E_misctextinfo2 = new MaterialSkin.Controls.MaterialButton();
@@ -66,6 +64,10 @@ namespace CompilerInfocardsUI
             materialButton_E_SBM3 = new MaterialSkin.Controls.MaterialButton();
             materialButton_E_resources = new MaterialSkin.Controls.MaterialButton();
             materialButton_VSCODE = new MaterialSkin.Controls.MaterialButton();
+            materialButton_ALL_SBM = new MaterialSkin.Controls.MaterialButton();
+            materialButton_ALL = new MaterialSkin.Controls.MaterialButton();
+            label1 = new Label();
+            materialButton_Open_DLLS = new MaterialSkin.Controls.MaterialButton();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             SuspendLayout();
@@ -111,11 +113,13 @@ namespace CompilerInfocardsUI
             tableLayoutPanel1.Controls.Add(materialButton_HTML_misctextinfo2, 1, 3);
             tableLayoutPanel1.Controls.Add(materialButton_HTML_SBM2, 1, 1);
             tableLayoutPanel1.Controls.Add(materialButton_HTML_infocards, 1, 5);
-            tableLayoutPanel1.Controls.Add(materialButton_ALL, 2, 8);
             tableLayoutPanel1.Controls.Add(textBoxLog, 0, 9);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 2, 9);
             tableLayoutPanel1.Controls.Add(materialButton_VSCODE, 1, 8);
             tableLayoutPanel1.Controls.Add(materialButton_ALL_SBM, 2, 1);
+            tableLayoutPanel1.Controls.Add(materialButton_ALL, 2, 5);
+            tableLayoutPanel1.Controls.Add(label1, 2, 8);
+            tableLayoutPanel1.Controls.Add(materialButton_Open_DLLS, 1, 9);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Margin = new Padding(7);
@@ -350,27 +354,6 @@ namespace CompilerInfocardsUI
             materialButton_HTML_misctextinfo2.UseVisualStyleBackColor = true;
             materialButton_HTML_misctextinfo2.Click += materialButton_HTML_misctextinfo2_Click;
             // 
-            // materialButton_ALL_SBM
-            // 
-            materialButton_ALL_SBM.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            materialButton_ALL_SBM.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton_ALL_SBM.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton_ALL_SBM.Depth = 0;
-            materialButton_ALL_SBM.HighEmphasis = true;
-            materialButton_ALL_SBM.Icon = null;
-            materialButton_ALL_SBM.Location = new Point(861, 76);
-            materialButton_ALL_SBM.Margin = new Padding(8, 13, 8, 13);
-            materialButton_ALL_SBM.MouseState = MaterialSkin.MouseState.HOVER;
-            materialButton_ALL_SBM.Name = "materialButton_ALL_SBM";
-            materialButton_ALL_SBM.NoAccentTextColor = Color.Empty;
-            materialButton_ALL_SBM.Size = new Size(64, 36);
-            materialButton_ALL_SBM.TabIndex = 11;
-            materialButton_ALL_SBM.Text = "SBM";
-            materialButton_ALL_SBM.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton_ALL_SBM.UseAccentColor = false;
-            materialButton_ALL_SBM.UseVisualStyleBackColor = true;
-            materialButton_ALL_SBM.Click += materialButton_ALL_SBM_Click;
-            // 
             // materialButton_HTML_SBM2
             // 
             materialButton_HTML_SBM2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
@@ -412,27 +395,6 @@ namespace CompilerInfocardsUI
             materialButton_HTML_infocards.UseAccentColor = false;
             materialButton_HTML_infocards.UseVisualStyleBackColor = true;
             materialButton_HTML_infocards.Click += materialButton_HTML_infocards_Click;
-            // 
-            // materialButton_ALL
-            // 
-            materialButton_ALL.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
-            materialButton_ALL.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            materialButton_ALL.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton_ALL.Depth = 0;
-            materialButton_ALL.HighEmphasis = true;
-            materialButton_ALL.Icon = null;
-            materialButton_ALL.Location = new Point(833, 386);
-            materialButton_ALL.Margin = new Padding(8, 13, 8, 13);
-            materialButton_ALL.MouseState = MaterialSkin.MouseState.HOVER;
-            materialButton_ALL.Name = "materialButton_ALL";
-            materialButton_ALL.NoAccentTextColor = Color.Empty;
-            materialButton_ALL.Size = new Size(119, 36);
-            materialButton_ALL.TabIndex = 16;
-            materialButton_ALL.Text = "СОБРАТЬ ВСЁ";
-            materialButton_ALL.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton_ALL.UseAccentColor = false;
-            materialButton_ALL.UseVisualStyleBackColor = true;
-            materialButton_ALL.Click += materialButton_ALL_Click;
             // 
             // textBoxLog
             // 
@@ -713,6 +675,82 @@ namespace CompilerInfocardsUI
             materialButton_VSCODE.UseVisualStyleBackColor = true;
             materialButton_VSCODE.Click += materialButton_VSCODE_Click;
             // 
+            // materialButton_ALL_SBM
+            // 
+            materialButton_ALL_SBM.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            materialButton_ALL_SBM.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            materialButton_ALL_SBM.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            materialButton_ALL_SBM.Depth = 0;
+            materialButton_ALL_SBM.HighEmphasis = true;
+            materialButton_ALL_SBM.Icon = null;
+            materialButton_ALL_SBM.Location = new Point(861, 76);
+            materialButton_ALL_SBM.Margin = new Padding(8, 13, 8, 13);
+            materialButton_ALL_SBM.MouseState = MaterialSkin.MouseState.HOVER;
+            materialButton_ALL_SBM.Name = "materialButton_ALL_SBM";
+            materialButton_ALL_SBM.NoAccentTextColor = Color.Empty;
+            materialButton_ALL_SBM.Size = new Size(64, 36);
+            materialButton_ALL_SBM.TabIndex = 11;
+            materialButton_ALL_SBM.Text = "SBM";
+            materialButton_ALL_SBM.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            materialButton_ALL_SBM.UseAccentColor = false;
+            materialButton_ALL_SBM.UseVisualStyleBackColor = true;
+            materialButton_ALL_SBM.Click += materialButton_ALL_SBM_Click;
+            // 
+            // materialButton_ALL
+            // 
+            materialButton_ALL.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            materialButton_ALL.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            materialButton_ALL.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            materialButton_ALL.Depth = 0;
+            materialButton_ALL.HighEmphasis = true;
+            materialButton_ALL.Icon = null;
+            materialButton_ALL.Location = new Point(768, 324);
+            materialButton_ALL.Margin = new Padding(8, 13, 8, 13);
+            materialButton_ALL.MouseState = MaterialSkin.MouseState.HOVER;
+            materialButton_ALL.Name = "materialButton_ALL";
+            materialButton_ALL.NoAccentTextColor = Color.Empty;
+            materialButton_ALL.Size = new Size(250, 36);
+            materialButton_ALL.TabIndex = 16;
+            materialButton_ALL.Text = "СОБРАТЬ ВСЕ DLL-библиотеки";
+            materialButton_ALL.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            materialButton_ALL.UseAccentColor = false;
+            materialButton_ALL.UseVisualStyleBackColor = true;
+            materialButton_ALL.Click += materialButton_ALL_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = SystemColors.ActiveCaptionText;
+            label1.Dock = DockStyle.Fill;
+            label1.ForeColor = Color.RoyalBlue;
+            label1.Location = new Point(490, 373);
+            label1.Name = "label1";
+            label1.Size = new Size(806, 62);
+            label1.TabIndex = 22;
+            label1.Text = "Редактирование файлов";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // materialButton_Open_DLLS
+            // 
+            materialButton_Open_DLLS.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            materialButton_Open_DLLS.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            materialButton_Open_DLLS.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            materialButton_Open_DLLS.Depth = 0;
+            materialButton_Open_DLLS.HighEmphasis = true;
+            materialButton_Open_DLLS.Icon = null;
+            materialButton_Open_DLLS.Location = new Point(361, 448);
+            materialButton_Open_DLLS.Margin = new Padding(8, 13, 8, 13);
+            materialButton_Open_DLLS.MouseState = MaterialSkin.MouseState.HOVER;
+            materialButton_Open_DLLS.Name = "materialButton_Open_DLLS";
+            materialButton_Open_DLLS.NoAccentTextColor = Color.Empty;
+            materialButton_Open_DLLS.Size = new Size(64, 122);
+            materialButton_Open_DLLS.TabIndex = 23;
+            materialButton_Open_DLLS.Text = "DLLS";
+            materialButton_Open_DLLS.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            materialButton_Open_DLLS.UseAccentColor = false;
+            materialButton_Open_DLLS.UseVisualStyleBackColor = true;
+            materialButton_Open_DLLS.Click += materialButton_Open_DLLS_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(15F, 33F);
@@ -769,5 +807,7 @@ namespace CompilerInfocardsUI
         private MaterialSkin.Controls.MaterialButton materialButton_E_SBM2;
         private MaterialSkin.Controls.MaterialButton materialButton_E_SBM3;
         private MaterialSkin.Controls.MaterialButton materialButton_E_resources;
+        private Label label1;
+        private MaterialSkin.Controls.MaterialButton materialButton_Open_DLLS;
     }
 }

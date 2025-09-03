@@ -1,11 +1,20 @@
-﻿using System.Diagnostics;
-using System.Windows.Forms;
+﻿using System.ComponentModel;
+using System.Diagnostics;
+using System.Text.Json;
+
+using CompilerInfocardsUI.AppData.Command;
 
 namespace CompilerInfocardsUI.Services
 {
     public class CommandServices
     {
         public Action<string> LogAction;
+        public Dictionary<string, ExeCommand> Commands { get; private set; } = new Dictionary<string, ExeCommand>();
+
+        public CommandServices(string jsonPath)
+        {
+            LoadCommands(jsonPath);
+        }
 
         /// <summary>
         /// Запускает программу с параметрами
@@ -33,19 +42,20 @@ namespace CompilerInfocardsUI.Services
                 process.OutputDataReceived += (s, ev) =>
                 {
                     if (!string.IsNullOrEmpty(ev.Data))
-                        LogAction.Invoke("Вывод: " + exePath + Environment.NewLine);
+                        LogAction?.Invoke($"[{exePath}] STDOUT: {ev.Data}{Environment.NewLine}");
                 };
 
                 process.ErrorDataReceived += (s, ev) =>
                 {
                     if (!string.IsNullOrEmpty(ev.Data))
-                        LogAction.Invoke("Ошибка: " + exePath + Environment.NewLine);
+                        LogAction?.Invoke($"[{exePath}] STDERR: {ev.Data}{Environment.NewLine}");
                 };
 
                 process.EnableRaisingEvents = true;
                 process.Exited += (s, ev) =>
                 {
-                    tcs.SetResult(true);
+                    if (!tcs.Task.IsCompleted)
+                        tcs.SetResult(true);
                     process.Dispose();
                 };
 
@@ -55,10 +65,30 @@ namespace CompilerInfocardsUI.Services
 
                 await tcs.Task; // дожидаемся завершения процесса
             }
+            catch (Win32Exception ex)
+            {
+                LogAction?.Invoke($"⚠ Ошибка Win32 при запуске {exePath}: {ex.Message}{Environment.NewLine}");
+            }
             catch (Exception ex)
             {
-                LogAction.Invoke("Ошибка запуска: " + ex.Message + Environment.NewLine);
+                LogAction?.Invoke("Ошибка запуска: " + ex.Message + Environment.NewLine);
             }
+        }
+
+        private void LoadCommands(string jsonPath)
+        {
+            if (!File.Exists(jsonPath))
+                throw new FileNotFoundException($"Файл команд не найден: {jsonPath}");
+
+            string json = File.ReadAllText(jsonPath);
+            var jsonOptions = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+            var doc = JsonSerializer.Deserialize<CommandsRoot>(json, jsonOptions);
+
+            // создаём словарь
+            Commands = doc.Commands.ToDictionary(
+                x => x.Key,
+                x => new ExeCommand(x.ExePath, x.Arguments.Replace("{currentPath}", AppDomain.CurrentDomain.BaseDirectory))
+            );
         }
     }
 }

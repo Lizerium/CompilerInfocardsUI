@@ -1,0 +1,148 @@
+﻿{
+  "commands": [
+    {
+      "key": "TEST",
+      "exePath": "notepad.exe",
+      "arguments": ""
+    },
+    {
+      "key": "VSCODE",
+      "exePath": "cmd.exe",
+      "arguments": "/C code \"{currentPath}\""
+    },
+    {
+      "key": "RootDLLS",
+      "exePath": "explorer.exe",
+      "arguments": "F:\\REPOSITORIES\\GITEA\\_REPO\\LizeriumModManager\\Lizerium_Mod_Manager\\bin\\Debug\\net6.0-windows\\RESOURCES_MODS_DLL\\LIZERIUM"
+    },
+    {
+      "key": "ALL",
+      "exePath": "frc.exe",
+      "arguments": ".\\FRC\\MergedStrings\\ALL_merged.frc .\\ALL.dll"
+    },
+
+    {
+      "key": "SBM_ALL",
+      "exePath": "frc.exe",
+      "arguments": "-c .\\FRC\\MergedStrings\\FRC_RELEASE\\SBM.frc .\\SBM.dll"
+    },
+    {
+      "key": "SBM3_ALL",
+      "exePath": "frc.exe",
+      "arguments": "-c .\\FRC\\MergedStrings\\FRC_RELEASE\\SBM3.frc .\\SBM3.dll"
+    },
+
+    {
+      "key": "infocards_HTML",
+      "exePath": "frc.exe",
+      "arguments": ".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_InfoCards_original.frc .\\infocards.dll"
+    },
+    {
+      "key": "SBM2_HTML",
+      "exePath": "frc.exe",
+      "arguments": ".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_SBM2_original.frc .\\SBM2.dll"
+    },
+    {
+      "key": "misctextinfo2_HTML",
+      "exePath": "frc.exe",
+      "arguments": ".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_MiscTextInfo2_original.frc .\\misctextinfo2.dll"
+    },
+    {
+      "key": "misctext_HTML",
+      "exePath": "frc.exe",
+      "arguments": ".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_MiscText_original.frc .\\misctext.dll"
+    },
+    {
+      "key": "equipresources_HTML",
+      "exePath": "frc.exe",
+      "arguments": ".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_EquipResources_original.frc .\\equipresources.dll"
+    },
+
+    {
+      "key": "SBM2_STRINGS",
+      "exePath": "frc.exe",
+      "arguments": ".\\FRC\\MergedStrings\\SBM2_merged.frc .\\SBM2.dll"
+    },
+    {
+      "key": "offerbriberesources_STRINGS",
+      "exePath": "frc.exe",
+      "arguments": ".\\FRC\\MergedStrings\\OfferBribeResources_merged.frc .\\offerbriberesources.dll"
+    },
+    {
+      "key": "equipresources_STRINGS",
+      "exePath": "frc.exe",
+      "arguments": ".\\FRC\\MergedStrings\\EquipResources_merged.frc .\\equipresources.dll"
+    },
+    {
+      "key": "nameresources_STRINGS",
+      "exePath": "frc.exe",
+      "arguments": ".\\FRC\\MergedStrings\\NameResources_merged.frc .\\nameresources.dll"
+    },
+    {
+      "key": "resources_STRINGS",
+      "exePath": "frc.exe",
+      "arguments": ".\\FRC\\MergedStrings\\resources_merged.frc .\\resources.dll"
+    },
+
+    {
+      "key": "SBM_EDIT",
+      "exePath": "cmd.exe",
+      "arguments": "/C code \".\\FRC\\MergedStrings\\FRC_RELEASE\\SBM.frc\""
+    },
+    {
+      "key": "SBM2_STRINGS_EDIT",
+      "exePath": "cmd.exe",
+      "arguments": "/C code \".\\FRC\\MergedStrings\\SBM2_merged.frc\""
+    },
+    {
+      "key": "SBM2_HTML_EDIT",
+      "exePath": "cmd.exe",
+      "arguments": "/C code \".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_SBM2_original.frc\""
+    },
+    {
+      "key": "SBM3_EDIT",
+      "exePath": "cmd.exe",
+      "arguments": "/C code \".\\FRC\\MergedStrings\\FRC_RELEASE\\SBM3.frc\""
+    },
+    {
+      "key": "resources_EDIT",
+      "exePath": "cmd.exe",
+      "arguments": "/C code \".\\FRC\\MergedStrings\\resources_merged.frc\""
+    },
+    {
+      "key": "infocards_EDIT",
+      "exePath": "cmd.exe",
+      "arguments": "/C code \".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_InfoCards_original.frc\""
+    },
+    {
+      "key": "misctext_EDIT",
+      "exePath": "cmd.exe",
+      "arguments": "/C code \".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_MiscText_original.frc\""
+    },
+    {
+      "key": "nameresources_EDIT",
+      "exePath": "cmd.exe",
+      "arguments": "/C code \".\\FRC\\MergedStrings\\NameResources_merged.frc\""
+    },
+    {
+      "key": "equipresources_STRINGS_EDIT",
+      "exePath": "cmd.exe",
+      "arguments": "/C code \".\\FRC\\MergedStrings\\EquipResources_merged.frc\""
+    },
+    {
+      "key": "equipresources_HTML_EDIT",
+      "exePath": "cmd.exe",
+      "arguments": "/C code \".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_EquipResources_original.frc\""
+    },
+    {
+      "key": "offerbriberesources_EDIT",
+      "exePath": "cmd.exe",
+      "arguments": "/C code \".\\FRC\\MergedStrings\\OfferBribeResources_merged.frc\""
+    },
+    {
+      "key": "misctextinfo2_EDIT",
+      "exePath": "cmd.exe",
+      "arguments": "/C code \".\\FRC\\MergedStrings\\FRC_HTML_ORIGINAL\\HTML_MiscTextInfo2_original.frc\""
+    }
+  ]
+}

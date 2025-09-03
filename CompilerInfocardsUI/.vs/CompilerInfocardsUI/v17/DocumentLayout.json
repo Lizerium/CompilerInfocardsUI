@@ -3,24 +3,23 @@
   "WorkspaceRootPath": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AFE14049-A8A0-4A07-B311-D146D1B58E0D}|CompilerInfocardsUI\\CompilerInfocardsUI.csproj|F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\compilerinfocardsui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{AFE14049-A8A0-4A07-B311-D146D1B58E0D}|CompilerInfocardsUI\\CompilerInfocardsUI.csproj|f:\\repositories\\github\\_repo\\lizerium\\compilerinfocardsui\\compilerinfocardsui\\compilerinfocardsui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AFE14049-A8A0-4A07-B311-D146D1B58E0D}|CompilerInfocardsUI\\CompilerInfocardsUI.csproj|solutionrelative:compilerinfocardsui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFE14049-A8A0-4A07-B311-D146D1B58E0D}|CompilerInfocardsUI\\CompilerInfocardsUI.csproj|f:\\repositories\\github\\_repo\\lizerium\\compilerinfocardsui\\compilerinfocardsui\\compilerinfocardsui\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFE14049-A8A0-4A07-B311-D146D1B58E0D}|CompilerInfocardsUI\\CompilerInfocardsUI.csproj|solutionrelative:compilerinfocardsui\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFE14049-A8A0-4A07-B311-D146D1B58E0D}|CompilerInfocardsUI\\CompilerInfocardsUI.csproj|f:\\repositories\\github\\_repo\\lizerium\\compilerinfocardsui\\compilerinfocardsui\\compilerinfocardsui\\configs.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AFE14049-A8A0-4A07-B311-D146D1B58E0D}|CompilerInfocardsUI\\CompilerInfocardsUI.csproj|solutionrelative:compilerinfocardsui\\configs.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFE14049-A8A0-4A07-B311-D146D1B58E0D}|CompilerInfocardsUI\\CompilerInfocardsUI.csproj|f:\\repositories\\github\\_repo\\lizerium\\compilerinfocardsui\\compilerinfocardsui\\compilerinfocardsui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFE14049-A8A0-4A07-B311-D146D1B58E0D}|CompilerInfocardsUI\\CompilerInfocardsUI.csproj|solutionrelative:compilerinfocardsui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFE14049-A8A0-4A07-B311-D146D1B58E0D}|CompilerInfocardsUI\\CompilerInfocardsUI.csproj|f:\\repositories\\github\\_repo\\lizerium\\compilerinfocardsui\\compilerinfocardsui\\compilerinfocardsui\\services\\commandservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFE14049-A8A0-4A07-B311-D146D1B58E0D}|CompilerInfocardsUI\\CompilerInfocardsUI.csproj|solutionrelative:compilerinfocardsui\\services\\commandservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AFE14049-A8A0-4A07-B311-D146D1B58E0D}|CompilerInfocardsUI\\CompilerInfocardsUI.csproj|f:\\repositories\\github\\_repo\\lizerium\\compilerinfocardsui\\compilerinfocardsui\\compilerinfocardsui\\compilerinfocardsui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{AFE14049-A8A0-4A07-B311-D146D1B58E0D}|CompilerInfocardsUI\\CompilerInfocardsUI.csproj|solutionrelative:compilerinfocardsui\\compilerinfocardsui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +29,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 3547,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "configs.json",
+              "DocumentMoniker": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\configs.json",
+              "RelativeDocumentMoniker": "CompilerInfocardsUI\\configs.json",
+              "ToolTip": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\configs.json",
+              "RelativeToolTip": "CompilerInfocardsUI\\configs.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-03T11:25:54.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\MainForm.cs",
+              "RelativeDocumentMoniker": "CompilerInfocardsUI\\MainForm.cs",
+              "ToolTip": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\MainForm.cs",
+              "RelativeToolTip": "CompilerInfocardsUI\\MainForm.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAJ4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:18:17.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\MainForm.cs",
+              "RelativeDocumentMoniker": "CompilerInfocardsUI\\MainForm.cs",
+              "ToolTip": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "CompilerInfocardsUI\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T11:17:42.708Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CompilerInfocardsUI",
+              "DocumentMoniker": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI.csproj",
+              "RelativeDocumentMoniker": "CompilerInfocardsUI\\CompilerInfocardsUI.csproj",
+              "ToolTip": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI.csproj",
+              "RelativeToolTip": "CompilerInfocardsUI\\CompilerInfocardsUI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-03T10:56:59.395Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
@@ -86,64 +136,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CommandServices.cs",
-              "DocumentMoniker": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\Services\\CommandServices.cs",
-              "RelativeDocumentMoniker": "CompilerInfocardsUI\\Services\\CommandServices.cs",
-              "ToolTip": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\Services\\CommandServices.cs",
-              "RelativeToolTip": "CompilerInfocardsUI\\Services\\CommandServices.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAADwvz0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T06:51:33.34Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\MainForm.cs",
-              "RelativeDocumentMoniker": "CompilerInfocardsUI\\MainForm.cs",
-              "ToolTip": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\MainForm.cs",
-              "RelativeToolTip": "CompilerInfocardsUI\\MainForm.cs",
-              "ViewState": "AgIAANoAAAAAAAAAAAAvwOkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T06:00:39.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\MainForm.cs",
-              "RelativeDocumentMoniker": "CompilerInfocardsUI\\MainForm.cs",
-              "ToolTip": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "CompilerInfocardsUI\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T05:33:57.974Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CompilerInfocardsUI.csproj",
-              "DocumentMoniker": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI.csproj",
-              "RelativeDocumentMoniker": "CompilerInfocardsUI\\CompilerInfocardsUI.csproj",
-              "ToolTip": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI.csproj",
-              "RelativeToolTip": "CompilerInfocardsUI\\CompilerInfocardsUI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-03T05:35:54.848Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainForm.Designer.cs",
-              "DocumentMoniker": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\MainForm.Designer.cs",
-              "RelativeDocumentMoniker": "CompilerInfocardsUI\\MainForm.Designer.cs",
-              "ToolTip": "F:\\REPOSITORIES\\GITHUB\\_REPO\\LIZERIUM\\CompilerInfocardsUI\\CompilerInfocardsUI\\CompilerInfocardsUI\\MainForm.Designer.cs",
-              "RelativeToolTip": "CompilerInfocardsUI\\MainForm.Designer.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAuwIcAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T05:34:21.237Z",
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AgIAAPUAAAAAAAAAAAAswAkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-09-03T10:55:29.208Z",
               "EditorCaption": ""
             }
           ]
