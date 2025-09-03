@@ -1,6 +1,0 @@
-F:\REPOSITORIES\GITHUB\_REPO\LIZERIUM\CompilerInfocardsUI\CompilerInfocardsUI\CompilerInfocardsUI\bin\Release\net8.0-windows\publish\CompilerInfocardsUI.exe
-F:\REPOSITORIES\GITHUB\_REPO\LIZERIUM\CompilerInfocardsUI\CompilerInfocardsUI\CompilerInfocardsUI\bin\Release\net8.0-windows\publish\CompilerInfocardsUI.dll
-F:\REPOSITORIES\GITHUB\_REPO\LIZERIUM\CompilerInfocardsUI\CompilerInfocardsUI\CompilerInfocardsUI\bin\Release\net8.0-windows\publish\CompilerInfocardsUI.deps.json
-F:\REPOSITORIES\GITHUB\_REPO\LIZERIUM\CompilerInfocardsUI\CompilerInfocardsUI\CompilerInfocardsUI\bin\Release\net8.0-windows\publish\CompilerInfocardsUI.runtimeconfig.json
-F:\REPOSITORIES\GITHUB\_REPO\LIZERIUM\CompilerInfocardsUI\CompilerInfocardsUI\CompilerInfocardsUI\bin\Release\net8.0-windows\publish\CompilerInfocardsUI.pdb
-F:\REPOSITORIES\GITHUB\_REPO\LIZERIUM\CompilerInfocardsUI\CompilerInfocardsUI\CompilerInfocardsUI\bin\Release\net8.0-windows\publish\MaterialSkin.dll
