@@ -2,8 +2,8 @@
  * Author: Nikolay Dvurechensky
  * Site: https://sites.google.com/view/dvurechensky
  * Gmail: dvurechenskysoft@gmail.com
- * Last Updated: 22 декабря 2025 06:52:10
- * Version: 1.0.116
+ * Last Updated: 23 декабря 2025 10:47:49
+ * Version: 1.0.117
  */
 
 using System.Threading.Tasks;
