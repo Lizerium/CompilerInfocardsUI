@@ -2,8 +2,8 @@
  * Author: Nikolay Dvurechensky
  * Site: https://sites.google.com/view/dvurechensky
  * Gmail: dvurechenskysoft@gmail.com
- * Last Updated: 03 января 2026 15:00:01
- * Version: 1.0.128
+ * Last Updated: 04 января 2026 06:52:09
+ * Version: 1.0.129
  */
 
 namespace CompilerInfocardsUI
