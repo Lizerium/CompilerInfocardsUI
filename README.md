@@ -1,7 +1,7 @@
 <h1 align="center">🧩 CompilerInfocardsUI</h1>
 
 <p align="center">
-  GUI-панель управления для сборки и редактирования <b>информационных DLL-карт</b> в <b>Freelancer (2003)</b> / <b>Lizerium</b>
+  GUI control panel for building and editing <b>Freelancer (2003)</b> / <b>Lizerium</b> <b>infocard DLL resources</b>
 </p>
 
 <p align="center">
@@ -15,56 +15,68 @@
   <img src="https://shields.dvurechensky.pro/badge/Status-Release-00C853?style=for-the-badge" />
 </p>
 
+<div align="center" style="margin: 20px 0; padding: 10px; background: #1c1917; border-radius: 10px;">
+  <strong>🌐 Language: </strong>
+  
+  <a href="./README.ru.md" style="color: #F5F752; margin: 0 10px;">
+    🇷🇺 Russian
+  </a>
+  | 
+  <span style="color: #0891b2; margin: 0 10px;">
+    ✅ 🇺🇸 English (current)
+  </span>
+</div>
+
 ---
 
 > [!NOTE]
-> Этот проект является частью экосистемы **Lizerium** и относится к направлению:
+> This project is part of the **Lizerium** ecosystem and belongs to the following direction:
 >
-> * [`Lizerium.Tools.Structs`](https://github.com/Lizerium/Lizerium.Tools.Structs)
+> - [`Lizerium.Tools.Structs`](https://github.com/Lizerium/Lizerium.Tools.Structs)
 >
-> Если вы ищете связанные инженерные и вспомогательные инструменты, начните оттуда.
+> If you are looking for related engineering and supporting tools, start there.
 
-## 🌌 Что это такое
+## 🌌 What is this
 
-**CompilerInfocardsUI** — это **универсальная Windows GUI-панель**, которую я написал для централизованной работы с **информационными картами Freelancer**:
+**CompilerInfocardsUI** is a **universal Windows GUI panel** that I built for centralized work with **Freelancer infocards**:
 
 ![alt text](Media/View.png)
 
-- названиями объектов
-- описаниями предметов
-- текстовыми ресурсами
-- HTML-представлениями инфокарт
-- DLL-библиотеками игры
+- object names
+- item descriptions
+- text resources
+- HTML representations of infocards
+- game DLL libraries
 
-По сути, это **HUB-интерфейс** над моими внутренними утилитами и пайплайном сборки, который позволяет **быстро открывать нужные файлы**, **редактировать их** и **компилировать итоговые DLL** через внешний инструмент `frc.exe`.
-
----
-
-## ❓ Зачем я это написал
-
-Во время разработки и поддержки контента для **Lizerium / Freelancer** у меня накопилась большая файловая структура с:
-
-- сотнями вариантов текстовых карт
-- разными версиями названий и описаний
-- дублями файлов в разных папках
-- разными DLL-целями под разные игровые сценарии
-
-Со временем ручная работа с этим стала просто неудобной.
-
-Поэтому я сделал отдельную **панель управления**, которая:
-
-- собирает все точки входа в одном месте
-- открывает нужные файлы без ручного поиска
-- позволяет быстро запускать компиляцию нужных DLL
-- убирает хаос из файловой структуры
+In essence, this is a **HUB interface** on top of my internal utilities and build pipeline, allowing you to **quickly open required files**, **edit them**, and **compile final DLLs** using the external tool `frc.exe`.
 
 ---
 
-## ⚙️ Что умеет
+## ❓ Why I built this
 
-### Сборка DLL-ресурсов
+While developing and maintaining content for **Lizerium / Freelancer**, I accumulated a large file structure with:
 
-Приложение умеет запускать команды сборки для различных игровых библиотек:
+- hundreds of text card variations
+- multiple versions of names and descriptions
+- duplicated files across different folders
+- multiple DLL targets for different game scenarios
+
+Over time, manual work with this became inefficient.
+
+So I created a dedicated **control panel** that:
+
+- brings all entry points into a single place
+- opens required files without manual searching
+- allows fast compilation of specific DLLs
+- removes chaos from the file structure
+
+---
+
+## ⚙️ Features
+
+### DLL Resource Compilation
+
+The application can execute build commands for various game libraries:
 
 #### `STRINGS`
 
@@ -87,52 +99,60 @@
 - `SBM`
 - `SBM3`
 
-#### Полная сборка
+#### Full Build
 
-- сборка **всех DLL-библиотек сразу**
-
----
-
-## 🛠 Возможности интерфейса
-
-Программа позволяет:
-
-- открывать исходные файлы нужной DLL-библиотеки
-- открывать папку с DLL
-- открывать проект через **VS Code**
-- запускать редактирование конкретных файлов
-- запускать сборку конкретных библиотек
-- запускать полную пакетную компиляцию
-- логировать выполнение всех действий в окне приложения
+- build **all DLL libraries at once**
 
 ---
 
-## 🧠 Как это работает
+## 🛠 Interface Capabilities
 
-- Вся логика работы завязана на файл: [configs.json](CompilerInfocardsUI/CompilerInfocardsUI/configs.json)
-  - Пример
+The application allows you to:
 
-    ```json
-    {
-    	"SBM2_STRINGS": {
-    		"ExePath": "frc.exe",
-    		"Arguments": "SBM2\\STRINGS\\input.txt"
-    	},
-    	"VSCODE": {
-    		"ExePath": "code",
-    		"Arguments": "."
-    	},
-    	"RootDLLS": {
-    		"ExePath": "explorer.exe",
-    		"Arguments": "DLLS"
-    	}
-    }
-    ```
+- open source files of a specific DLL library
+- open the DLL folder
+- open the project in **VS Code**
+- edit specific files
+- run compilation for selected libraries
+- execute full batch compilation
+- log all actions directly in the application UI
 
-  - Редактируйте обозначайте свои пути до `frc.exe` от Adoxa и файлов генерации
+---
+
+## 🧠 How it works
+
+- All logic is driven by the configuration file:  
+  [`configs.json`](CompilerInfocardsUI/CompilerInfocardsUI/configs.json)
+
+  Example:
+
+  ```json
+  {
+  	"SBM2_STRINGS": {
+  		"ExePath": "frc.exe",
+  		"Arguments": "SBM2\\STRINGS\\input.txt"
+  	},
+  	"VSCODE": {
+  		"ExePath": "code",
+  		"Arguments": "."
+  	},
+  	"RootDLLS": {
+  		"ExePath": "explorer.exe",
+  		"Arguments": "DLLS"
+  	}
+  }
+  ```
+
+```
+
+* Configure your own paths to `frc.exe` (Adoxa) and generation files.
+
+---
 
 ## Thx
 
-> Thanks for the source code which helped me understand the issue of information cards.
+> Thanks for the source code which helped me understand the infocard system.
 
-- http://adoxa.altervista.org/freelancer/tools.html#frc - Adoxa
+* [http://adoxa.altervista.org/freelancer/tools.html#frc](http://adoxa.altervista.org/freelancer/tools.html#frc) — Adoxa
+
+```
